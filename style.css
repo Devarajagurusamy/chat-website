@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.message {
+  background-color: darkgrey;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.outgoing {
+  background-color: black;
+  align-self: flex-end;
+}
+
+.incoming {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+}
